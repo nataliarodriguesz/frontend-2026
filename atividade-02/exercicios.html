@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios| Algoritmos</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <a href="../main.html" class="button_voltar">Voltar</a>
+    <main>
+        <article>
+            <form id="exercicios">
+                <h2>Exercício 01</h2>
+                <div class="question">
+                    <p>Qual é o tipo da estrutura do algoritmo a seguir?</p>
+                    <pre>
+                        se (nota >= 7) então
+                            imprimir "Aprovado"
+                        senão
+                            imprimir "Reprovado"
+                        fim se
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> Repetição</label>
+                        <label><input type="radio" name="q1" value="b"> Condicional simples</label>
+                        <label><input type="radio" name="q1" value="c"> Condicional composta</label>
+                        <label><input type="radio" name="q1" value="d"> Condicional aninhada</label>
+                    </div>
+                </div>
+                <button type="button" onclick="checkAnswer()">Verificar Resposta</button>
+
+                <h2>Exercício 02</h2>
+                <div class="question">
+                    <p>Considere o algoritmo abaixo. Qual valor será impresso no final?</p>
+                    <pre>
+                        x ← 5
+                        para i de 1 até 3 faça
+                            x ← x + i
+                        fim para
+                        imprimir x
+                    </pre>
+                        <div class="options">
+                            <label><input type="radio" name="q2" value="a"> 5</label>
+                            <label><input type="radio" name="q2" value="b"> 6</label>
+                            <label><input type="radio" name="q2" value="c"> 11</label>
+                            <label><input type="radio" name="q2" value="d"> 14</label>
+                        </div>
+                </div>
+                <button type="button" onclick="checkAnswer()">Verificar Resposta</button>
+
+                <h2>Exercício 03</h2>
+                <div class="question">
+                    <p>Considere o algoritmo abaixo. Qual valor será impresso?</p>
+                    <pre>
+                        nota ← 8
+                        se (nota >= 7) então
+                            se (nota = 10) então
+                                imprimir "Excelente"
+                            senão
+                                imprimir "Bom"
+                        fim se
+                        senão
+                            imprimir "Reprovado"
+                        fim se
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> Excelente</label>
+                        <label><input type="radio" name="q3" value="b"> Bom</label>
+                        <label><input type="radio" name="q3" value="c"> Reprovado</label>
+                        <label><input type="radio" name="q3" value="d"> Nenhum</label>
+                    </div>
+                </div>
+                <button type="button" onclick="checkAnswer()">Verificar Resposta</button>
+
+                <h2>Exercício 04</h2>
+                <div class="question">
+                    <p>Qual valor será impresso pelo algoritmo abaixo?</p>
+                    <pre>
+                        soma ← 0
+                        para i de 1 até 4 faça
+                            soma ← soma + 2
+                        fim para
+                        imprimir soma
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> 4</label>
+                        <label><input type="radio" name="q4" value="b"> 6</label>
+                        <label><input type="radio" name="q4" value="c"> 8</label>
+                        <label><input type="radio" name="q4" value="d"> 10</label>
+                    </div>
+                </div>   
+                <button type="button" onclick="checkAnswer()">Verificar Resposta</button>
+
+                <h2>Exercício 05</h2>
+                    <div class="question">
+                    <p>Qual valor será impresso pelo algoritmo abaixo?</p>
+                    <pre>
+                        nota1 ← 8
+                        nota2 ← 6
+
+                        se (nota1 >= 7 E nota2 >= 7) então
+                            imprimir "Aprovado"
+                        senão
+                            imprimir "Recuperação"
+                        fim se
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> Aprovado</label>
+                        <label><input type="radio" name="q5" value="b"> Recuperação</label>
+                        <label><input type="radio" name="q5" value="c"> Reprovado</label>
+                        <label><input type="radio" name="q5" value="d"> Nenhum</label>
+                    </div>
+                </div>
+
+                <h2>Exercício 06</h2>
+                <div class="question">
+                    <p>Qual valor será impresso pelo algoritmo abaixo?</p>
+                    <pre>
+                        x ← 1
+                        para i de 1 até 4 faça
+                            x ← x * 2
+                        fim para
+                        imprimir x
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q6" value="a"> 4</label>
+                        <label><input type="radio" name="q6" value="b"> 8</label>
+                        <label><input type="radio" name="q6" value="c"> 16</label>
+                        <label><input type="radio" name="q6" value="d"> 32</label>
+                    </div>
+                </div>
+
+                <h2>Exercício 07</h2>
+                <div class="question">
+                    <p>Qual valor será impresso pelo algoritmo abaixo?</p>
+                    <pre>
+                        soma ← 0
+                        para i de 1 até 5 faça
+                            se (i MOD 2 = 0) então
+                                soma ← soma + i
+                            fim se
+                        fim para
+                        imprimir soma
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="a"> 5</label>
+                        <label><input type="radio" name="q7" value="b"> 6</label>
+                        <label><input type="radio" name="q7" value="c"> 8</label>
+                        <label><input type="radio" name="q7" value="d"> 12</label>
+                    </div>
+                </div>
+
+                <h2>Exercício 08</h2>
+                <div class="question">
+                    <p>Qual valor será impresso pelo algoritmo abaixo?</p>
+                    <pre>
+                        soma ← 0
+                        para i de 1 até 5 faça
+                            soma ← soma + (i * 2)
+                        fim para
+                        imprimir soma
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q13" value="a"> 10</label>
+                        <label><input type="radio" name="q13" value="b"> 15</label>
+                        <label><input type="radio" name="q13" value="c"> 30</label>
+                        <label><input type="radio" name="q13" value="d"> 20</label>
+                    </div>
+                </div>
+
+                <h2>Exercício 09</h2>
+                <div class="question">
+                    <p>Qual será impresso pelo algoritmo abaixo?</p>
+                    <pre>
+                        x ← 4
+                        y ← 9
+
+                        se (x > 5 OU y > 7) então
+                            imprimir "Verdadeiro"
+                        senão
+                            imprimir "Falso"
+                        fim se
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q14" value="a"> Verdadeiro</label>
+                        <label><input type="radio" name="q14" value="b"> Falso</label>
+                        <label><input type="radio" name="q14" value="c"> Nenhum</label>
+                        <label><input type="radio" name="q14" value="d"> Erro</label>
+                    </div>
+                </div>
+
+                <h2>Exercício 10</h2>
+                <div class="question">
+                    <p>Qual valor será impresso pelo algoritmo abaixo?</p>
+                    <pre>
+                        cont ← 0
+                        para i de 1 até 3 faça
+                            para j de 1 até 2 faça
+                                cont ← cont + 1
+                            fim para
+                        fim para
+                        imprimir cont
+                    </pre>
+                    <div class="options">
+                        <label><input type="radio" name="q15" value="a"> 3</label>
+                        <label><input type="radio" name="q15" value="b"> 4</label>
+                        <label><input type="radio" name="q15" value="c"> 5</label>
+                        <label><input type="radio" name="q15" value="d"> 6</label>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </main>
+
+</body>
+</html>
