@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap'); /*font-family: "Anta", sans-serif;*/
+
+@font-face {
+    font-family: 'Apagado';
+    src: url('../fontes/PUNKBABE TRIAL.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor01: #e5e4de;
+    --cor02: #c7c6c5;
+    --cor03: #74705D;
+    --cor04: #32382C;
+    --cor05: #1F1F0B;
+
+    --fonte-apagada: 'Apagado', Times, serif;
+    --fonte-destaque: "Anta", sans-serif;;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    background-color: var(--cor01);
+}
+
+#topo {
+    background-color: var(--cor02);
+    padding: 100px;
+}
+
+#topo h1{
+    background-color: var(--cor02);
+}
+
+.apagado {
+    background-color: var(--cor02);
+    font-family: var(--fonte-apagada);
+    font-size: 150px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
