@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* ============================
+    Variáveis de cores e fontes
+===============================*/
+:root {
+    --cor01: #e5e4de;
+    --cor02: #c7c6c5;
+    --cor03: #969593;
+    --cor04: #363636a9;
+    --cor05: #171717a9;
+
+    --fonte-apagada: 'Apagado', Times, serif;
+    --fonte-destaque: "Anta", sans-serif;;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
