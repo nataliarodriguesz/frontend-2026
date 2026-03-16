@@ -46,6 +46,25 @@ a {
 }
 
 /*----------------- 
+       MAIN
+-------------------*/
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+
+    margin: auto;
+    margin-bottom: 30px;
+    
+
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/*----------------- 
         TOPO   
 -------------------*/
 
@@ -149,22 +168,21 @@ a {
     border-radius: 5px;
 }
 
+
 /*----------------- 
       PIONEIROS
 -------------------*/
 
+#layout-pioneiros {
+    display: flex;
+}
+
+#layout-cards {
+    flex-direction: column;
+}
+
 #pioneiros {
-    min-width: 300px;
-    max-width: 1000px;
-
-    margin: auto;
-    margin-bottom: 30px;
-    
-
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    margin-left: 15px;
 }
 
 #pioneiros h2 {
@@ -172,17 +190,17 @@ a {
     color: var(--cor04);
     font-family: var(--fonte-titulo01);
 
-    margin-left: 15px;
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px;
 }
 
+/* ---- CARDS ---- */
 .card {
    display: flex; /* Deixar os elementos lado a lado */
    gap: 15px;     /* Distância entre eles*/
 
-   width: 450px;
+   width: 600px;
    padding: 10px;
-   margin: 15px;
+   margin-bottom: 10px;
 
    border: 1px solid rgb(217, 216, 216);
    border-radius: 8px;
@@ -192,6 +210,7 @@ a {
 .card img {
      width: 150px;
 }
+/* -------------- */
 
 .conteudo {
     display: flex;
@@ -207,16 +226,41 @@ a {
     padding: 10px 0px;
 }
 
-.conteudo summary {
-}
-
 aside {
     background-color: var(--cor02);
     padding: 40px;
     border-radius: 10px;
     margin: 10px;
+
+    text-align: center;    
+}
+
+aside h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+aside p {
+    letter-spacing: 1px;
 }
 
 /*----------------- 
         BUGS
 -------------------*/
+
+#bugs {
+    padding: 15px 0px;
+    margin-left: 15px;
+}
+
+
+#bugs h2{
+    color: var(--cor04);
+    font-size: 35px;
+    font-family: var(--fonte-titulo01);
+}
+
+#bugs h3{
+    font-family: var(--fonte-padrão);
+    font-style: italic;
+}
