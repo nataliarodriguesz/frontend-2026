@@ -45,6 +45,38 @@ a {
     color: white;
 }
 
+h2 {
+    color: var(--cor04);
+    font-size: 35px;
+    font-family: var(--fonte-titulo01);
+}
+
+h3 {
+    font-family: var(--fonte-padrão);
+    font-style: italic;
+}
+
+/*----------------- 
+        CARDS
+-------------------*/
+
+.card01 {
+   display: flex; /* Deixar os elementos lado a lado */
+   gap: 15px;     /* Distância entre eles*/
+
+   width: 600px;
+   padding: 10px;
+   margin-bottom: 10px;
+
+   border: 1px solid rgb(217, 216, 216);
+   border-radius: 8px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.218);
+}
+
+.card01 img {
+     width: 150px;
+}
+
 /*----------------- 
        MAIN
 -------------------*/
@@ -55,6 +87,7 @@ main {
 
     margin: auto;
     margin-bottom: 30px;
+    padding: 15px 30px;
     
 
     background-color: white;
@@ -139,6 +172,7 @@ main {
 
 #menu-principal {
     background-color: var(--cor05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.218);
     padding: 10px;
 }
 
@@ -177,49 +211,17 @@ main {
     display: flex;
 }
 
-#layout-cards {
+#layout-cards01 {
     flex-direction: column;
 }
 
-#pioneiros {
-    margin-left: 15px;
-}
-
 #pioneiros h2 {
-    font-size: 35px;
-    color: var(--cor04);
-    font-family: var(--fonte-titulo01);
-
     padding: 15px 0px;
 }
-
-/* ---- CARDS ---- */
-.card {
-   display: flex; /* Deixar os elementos lado a lado */
-   gap: 15px;     /* Distância entre eles*/
-
-   width: 600px;
-   padding: 10px;
-   margin-bottom: 10px;
-
-   border: 1px solid rgb(217, 216, 216);
-   border-radius: 8px;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.218);
-}
-
-.card img {
-     width: 150px;
-}
-/* -------------- */
 
 .conteudo {
     display: flex;
     flex-direction: column; /* Deixar o conteúdo um embaixo do outro*/
-}
-
-.conteudo h3 {
-    font-family: var(--fonte-padrão);
-    font-style: italic;
 }
 
 .conteudo p {
@@ -230,9 +232,10 @@ aside {
     background-color: var(--cor02);
     padding: 40px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 0px 10px 20px;
 
-    text-align: center;    
+    text-align: center;   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.218); 
 }
 
 aside h4 {
@@ -250,17 +253,100 @@ aside p {
 
 #bugs {
     padding: 15px 0px;
-    margin-left: 15px;
 }
 
-
-#bugs h2{
-    color: var(--cor04);
-    font-size: 35px;
-    font-family: var(--fonte-titulo01);
-}
 
 #bugs h3{
-    font-family: var(--fonte-padrão);
-    font-style: italic;
+    margin: 15px 0px;
+
 }
+
+#bugs p {
+    margin: 10px 0px;
+}
+
+#bugs img {
+    display: block;
+    margin: auto;
+    width: 700px;
+}
+
+.img-legenda {
+    width: 700px;
+    margin: auto;
+}
+
+.img-legenda figcaption {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+figcaption {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/*----------------- 
+      INTERNET
+-------------------*/
+
+#internet {
+    background-color: var(--cor02);
+    padding: 10px 30px 25px 30px;
+    margin: 15px 0px;
+    border-radius: 15px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.218); 
+}
+
+#internet h2 {
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 1.2px;
+    background-color: var(--cor03);
+    margin: -10px -30px;
+    padding: 8px 30px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#internet h3 {
+    margin: 25px 0px 10px 0px;
+}
+
+
+/*----------------- 
+      INTERNET
+-------------------*/
+
+#layout-linguagens {
+    display: flex;
+    margin: 40px 0px 40px 30px;
+    gap: 120px;
+}
+
+#layout-definicoes {
+    flex-direction: column;
+}
+
+#linguagens {
+    background-color: var(--cor03);
+    color: rgba(255, 255, 255, 0.848);
+    margin: 15px -30px;
+    padding: 100px 30px 70px;
+}
+
+#linguagens h2 {
+    color: white;
+    margin-top: -60px;
+}
+
+#linguagens h3 {
+    margin: 10px 0px;
+}
+
+#linguagens p {
+    margin-bottom: 20px;
+}
+
+
+
