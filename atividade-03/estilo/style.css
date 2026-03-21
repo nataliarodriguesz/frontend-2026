@@ -320,23 +320,24 @@ figcaption {
 
 #layout-linguagens {
     display: flex;
-    margin: 40px 0px 40px 30px;
+    margin: 30px 0px 30px 40px;
     gap: 120px;
 }
 
 #layout-definicoes {
     flex-direction: column;
+    margin-top: 20px;
 }
 
 #linguagens {
     background-color: var(--cor03);
-    color: rgba(255, 255, 255, 0.848);
+    color: #ffffffd8;
     margin: 15px -30px;
-    padding: 100px 30px 70px;
+    padding: 100px 30px 40px;
 }
 
 #linguagens h2 {
-    color: white;
+    color: #ffffffd8;
     margin-top: -60px;
 }
 
@@ -349,4 +350,202 @@ figcaption {
 }
 
 
+#linguagens td {
+    padding: 10px 60px;
+}
 
+#linguagens caption {
+    margin: 10px;
+}
+
+/*----------------- 
+   LINHA DO TEMPO
+-------------------*/
+
+#linha-do-tempo h2{
+    margin: 40px 0px;
+}
+
+.timeline{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--cor03);
+}
+
+
+.timeline li {
+    position: relative;
+
+    padding-left: 50px;
+    margin-bottom: 80px ;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor03);
+    border-radius: 50%;
+}
+
+.date {
+    font-weight: bold;
+    color: var(--cor02);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*----------------- 
+      TOPO 02
+-------------------*/
+
+.topo2 header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    text-align: center;
+    margin: 10px -30px;
+    padding: 40px;
+}
+
+.titulo02 {
+    font-family: var(--fonte-titulo01);
+    letter-spacing: 1px;
+    color: #ffffff;    
+}
+
+.distorcido02 {
+    font-family: var(--fonte-titulo02);
+    letter-spacing: 10px;
+    font-size: 40px;
+
+    background: linear-gradient(to bottom, 
+        var(--cor05),
+        var(--cor03),
+        var(--cor02),
+        var(--cor03),
+        var(--cor05));
+
+    -webkit-background-clip: text;   /* Necessário para compatibilidade com alguns navegadores */
+    background-clip: text;           /* Deixa o gradiente apenas no texto */
+    
+    -webkit-text-fill-color: transparent;  /* Necessário para compatibilidade com alguns navegadores */
+    color: transparent;                    /* Tira a cor do texto para aparecer o gradiente*/
+
+    background-size: 100% 400%;
+    animation: cairDegrade 3s linear infinite;
+}
+
+.distorcido02:hover {
+    background-position: bottom;
+}
+
+@keyframes cairDegrade {
+    from {
+        background-position: 0% 200%;
+    }
+    to {
+        background-position: 0% 0%;
+    }
+}
+
+.subtitulo02 {
+    color: var(--cor02);
+    font-family: var(--fonte-titulo03);
+}
+
+.topo2 p {
+    color: #ffffff;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+/*----------------- 
+      NAVEGAÇÃO
+-------------------*/
+
+.nav02 {
+    background-color: var(--cor02);
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    display: flex;
+    width: fit-content; /* adapta ao conteúdo */
+}
+
+.nav02 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--fonte-titulo01);
+    letter-spacing: 2px;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav02 li {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+.nav02 a:hover {
+    color: var(--cor03);
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+/*----------------- 
+        NOMES
+-------------------*/
+
+.layout-nav02 {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+#nomes {
+    max-width: 700px;
+}
+
+#nomes p {
+    margin: 10px;
+}
+
+/*----------------- 
+       FOOTER
+-------------------*/
+
+footer {
+    background-color: var(--cor04);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+
+}
+
+footer address {
+    
+}
